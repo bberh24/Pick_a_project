@@ -1,0 +1,185 @@
+/* Navbar styles */
+.navbar {
+    background-color: #007bff;
+    color: #fff;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    padding: 10px;
+}
+
+.navbar-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 10px;
+    font-family: Helvetica, sans-serif
+
+}
+
+.navbar-nav {
+    display: flex;
+    list-style: none;
+    margin-right: 10px;
+}
+
+.nav-item {
+    margin-left: 15px;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: Helvetica, sans-serif
+
+}
+
+.nav-link:hover {
+    color: #fff;
+    opacity: 0.5;
+}
+
+/* game and leaderboard description divs*/
+.game_des{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game_des-content{
+    display: flex;
+    width: 700px;
+    height: 100%;
+    margin: 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#game_des-header{
+    font-size: 24px;
+    font-family: Helvetica, sans-serif
+}
+
+#game_des-paragraph{
+    font-size: 15px;
+    font-family: Helvetica, sans-serif
+}
+
+
+.leaderboard_des{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.leaderboard_des-content{
+    display: flex;
+    width: 700px;
+    height: 100%;
+    margin: 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#leaderboard_des-header{
+    font-size: 32px;
+    font-family: Helvetica, sans-serif
+}
+
+#leaderboard_des-paragraph{
+    font-size: 16px;
+    font-family: Helvetica, sans-serif
+    
+}
+
+/*button div*/
+.username{
+    margin-bottom: 10px;
+    padding-left: 400px;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+/*sketch div*/
+#sketch-holder {
+    display: flex;
+  
+    justify-content: center;
+    align-items: center;
+  }
+
+  .leaderboard{
+    display: flex;
+  
+    justify-content: center;
+    align-items: center;
+  }
+  /* Media query for iPhone 5 */
+@media (max-width: 550px) {
+    .navbar-title {
+      font-size: 18px; /* adjusts font size for smaller screens */
+      margin-left: 5px; /* reduces margin for compact spacing */
+    }
+  
+    .nav-item {
+      margin-left: 10px; /* adjusts margin for more compact spacing */
+    }
+  
+    .nav-link {
+        font-size: 14px; /* adjusts font size for smaller screens */
+      }
+    
+    #game_des-header,
+    #game_des-paragraph{
+        font-size: 14px; /* adjusts font size for smaller screens */
+    }
+
+    .leaderboard_des-header {
+        font-size: 24px;
+    }
+    .leaderboard_des-paragraph {
+        font-size: 16px;
+    }
+
+    .username {
+      padding-left: 20px; /* adjusts padding for more compact spacing */
+    }
+
+    #sketch-holder{
+        transform:scale(0.9);
+    }
+}
+@media (max-width: 490px) {
+    #sketch-holder{
+        margin-top: -20px;
+        transform:scale(0.8);
+    }
+}
+
+@media (max-width: 380px) {
+    #sketch-holder{
+        margin-top: -70px;
+        transform:scale(0.6);
+    }
+}
+
+/* table styling */
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
