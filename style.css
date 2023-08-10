@@ -105,6 +105,11 @@
     align-items: center;
 }
 
+/*button*/
+.btn:hover{
+    cursor: pointer;
+}
+
 /*sketch div*/
 #sketch-holder {
     display: flex;
